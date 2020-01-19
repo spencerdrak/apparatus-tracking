@@ -6,6 +6,6 @@ GOOS=linux go build -a -installsuffix cgo -o apparatus-tracking github.com/spenc
 
 cp ./apparatus-tracking ../
 
-docker build -t local/apparatus-tracking:$TAG ../
+docker build -t mvfd/apparatus-tracking:$TAG ../
 
 rm ../apparatus-tracking
