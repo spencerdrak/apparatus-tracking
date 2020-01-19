@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", handler)
-	http.HandleFunc("/readiness", readiness)
+	http.HandleFunc("/apparatus-tracking", handler)
+	http.HandleFunc("/apparatus-tracking/readiness", readiness)
 	http.ListenAndServe(":8080", nil)
 }
 
